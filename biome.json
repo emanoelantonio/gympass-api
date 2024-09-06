@@ -27,10 +27,8 @@
 			{
 				"include": ["test/**/*", "build/**/*"],
 				"linter": {
-					"style": {
-						"useFilenamingConvention": "off"
-					}
-				}
+          "enabled": false
+        }
 			}
 		]
 }
