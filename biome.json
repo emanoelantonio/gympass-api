@@ -6,13 +6,16 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "suspicious": {
+        "noConfusingVoidType":"off"
+      }
     }
   },
   "javascript": {
     "formatter": {
       "enabled": true,
-      "lineWidth": 120,
+      "lineWidth": 80,
       "arrowParentheses":"always",
       "bracketSameLine": false,
       "bracketSpacing": true,
@@ -27,10 +30,8 @@
 			{
 				"include": ["test/**/*", "build/**/*"],
 				"linter": {
-					"style": {
-						"useFilenamingConvention": "off"
-					}
-				}
+          "enabled": false
+        }
 			}
 		]
 }
