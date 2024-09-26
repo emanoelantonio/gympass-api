@@ -28,7 +28,7 @@ describe('Get User Profile Use Case', () => {
 	});
 
 	it('should throw a ResourceNotFoundError when the user does not exist', async () => {
-		expect(() =>
+		await expect(() =>
 			sut.execute({
 				userId: 'non-existing-id',
 			})
